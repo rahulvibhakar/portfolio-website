@@ -3,30 +3,25 @@ import { PageLayout } from "@/components/PageLayout";
 
 const About = () => {
   const skills = [
-    { category: "Design", items: ["UI/UX Design", "Figma", "Adobe Creative Suite", "Design Systems"] },
+    { category: "Design", items: ["UI/UX Design", "Design Systems"] },
     { category: "Frontend", items: ["React", "TypeScript", "Tailwind CSS", "Next.js"] },
-    { category: "Backend", items: ["Node.js", "Express", "PostgreSQL", "Firebase"] },
+    { category: "Backend", items: ["Node.js", "Express","Firebase"] },
   ];
 
   const experiences = [
     {
-      title: "Senior Designer",
-      company: "Studio Design Co",
-      period: "2023 - Present",
-      description: "Led design projects for various clients, focusing on creating intuitive user experiences and visually appealing interfaces."
+      title: "Intern",
+      company: "Prodevans Technology",
+      period: "2024(August) - 2024(September)",
+      description: "Learnt to use various tools and created real world project with experienced professionals."
     },
     {
-      title: "Frontend Developer",
-      company: "Tech Solutions Inc",
-      period: "2021 - 2023",
-      description: "Developed responsive web applications using React and TypeScript, collaborating closely with design and backend teams."
+      title: "Intern",
+      company: "Shadowfox",
+      period: "2025(April) - 2025(May",
+      description: "Developed responsive web applications using React and TypeScript, collaborating closely with design and backend teams and learnt mnay data science related concepts."
     },
-    {
-      title: "UI/UX Designer",
-      company: "Creative Agency",
-      period: "2019 - 2021",
-      description: "Created user interfaces and experiences for web and mobile applications, conducting user research and usability testing."
-    }
+    
   ];
 
   return (
@@ -38,13 +33,13 @@ const About = () => {
             <div className="aspect-square bg-muted rounded-full w-48 h-48 mx-auto md:mx-0"></div>
             <div className="md:col-span-2">
               <p className="text-lg mb-4">
-                Hello! I'm a passionate designer and developer with over 5 years of experience creating digital products that are both beautiful and functional.
+                Hello! I'm a passionate designer and developer with enthusiasm of creating digital products that are both beautiful and functional.
               </p>
               <p className="mb-4">
-                My journey in the digital world began with a curiosity about how things work and a desire to create. Today, I combine my technical skills with creative thinking to build solutions that solve real problems.
+                My journey in the digital world began with a curiosity about how things work and a desire to create.I combined my technical skills with creative thinking to build solutions that solve real problems.
               </p>
               <p>
-                When I'm not designing or coding, you can find me exploring new hiking trails, experimenting with photography, or deepening my practice of mindfulness meditation.
+                When I'm not designing or coding, you can find me exploring new hiking trails, experimenting with photography.
               </p>
             </div>
           </div>
