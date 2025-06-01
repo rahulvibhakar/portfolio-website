@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { PageLayout } from "@/components/PageLayout";
 import { Input } from "@/components/ui/input";
@@ -27,7 +26,7 @@ const Blog = () => {
       excerpt: "Explore the emerging trends in web design that will shape the digital landscape in the coming year.",
       date: "April 2, 2025",
       category: "Design",
-      readTime: "5 min read"
+      
     },
     {
       id: 2,
@@ -35,7 +34,7 @@ const Blog = () => {
       excerpt: "Learn how to create websites that are accessible to everyone, regardless of ability or disability.",
       date: "March 28, 2025",
       category: "Development",
-      readTime: "8 min read"
+     
     },
     {
       id: 3,
@@ -43,7 +42,7 @@ const Blog = () => {
       excerpt: "A step-by-step guide to conducting user research that yields actionable insights for your design process.",
       date: "March 15, 2025",
       category: "UX",
-      readTime: "6 min read"
+      
     },
     {
       id: 4,
@@ -51,7 +50,7 @@ const Blog = () => {
       excerpt: "My personal journey of transitioning from a design role to becoming a full-stack developer.",
       date: "March 5, 2025",
       category: "Career",
-      readTime: "7 min read"
+      
     },
     {
       id: 5,
@@ -59,7 +58,7 @@ const Blog = () => {
       excerpt: "A curated list of tools that every web developer should have in their toolkit.",
       date: "February 27, 2025",
       category: "Tools",
-      readTime: "4 min read"
+     
     },
     {
       id: 6,
@@ -67,7 +66,7 @@ const Blog = () => {
       excerpt: "A comprehensive guide to building a consistent design system for your product or organization.",
       date: "February 15, 2025",
       category: "Design",
-      readTime: "10 min read"
+      
     },
   ];
   
@@ -82,6 +81,7 @@ const Blog = () => {
   return (
     <PageLayout>
       <div className="container mx-auto px-4 py-12">
+        {/* Page Title & Intro */}
         <div className="max-w-4xl mx-auto mb-12 text-center">
           <h1 className="text-4xl font-heading font-bold mb-4">Blog</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -89,6 +89,7 @@ const Blog = () => {
           </p>
         </div>
         
+        {/* Search Input */}
         <div className="max-w-4xl mx-auto mb-8">
           <div className="relative">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
@@ -102,6 +103,7 @@ const Blog = () => {
           </div>
         </div>
         
+        {/* Category Filter Badges */}
         <div className="max-w-4xl mx-auto mb-12 flex flex-wrap gap-2">
           {categories.map((category) => (
             <Badge
@@ -115,6 +117,7 @@ const Blog = () => {
           ))}
         </div>
         
+        {/* Blog Posts List */}
         <div className="max-w-4xl mx-auto">
           {filteredPosts.length > 0 ? (
             <div className="space-y-8">
@@ -129,9 +132,11 @@ const Blog = () => {
                   </div>
                   <h2 className="text-2xl font-heading font-bold mb-2">{post.title}</h2>
                   <p className="text-muted-foreground mb-4">{post.excerpt}</p>
-                  <Link to={`/blog/post-${post.id}`} className="text-primary font-medium inline-flex items-center">
-                    Read article <ArrowRight className="ml-1 h-4 w-4" />
-                  </Link>
+                  {(post.id !== 1 && post.id !== 2 && post.id!==3&&post.id!==4&&post.id!==5&&post.id!==6) && (
+                    <Link to={`/blog/post-${post.id}`} className="text-primary font-medium inline-flex items-center">
+                      Read article <ArrowRight className="ml-1 h-4 w-4" />
+                    </Link>
+                  )}
                 </article>
               ))}
             </div>

@@ -9,47 +9,52 @@ const Projects = () => {
     {
       id: 1,
       title: "Event Management",
-      description: "Event Management is a comprehensive web-based system designed to streamline the planning and execution of events. It allows organizers to create and manage events, handle attendee registrations, and maintain real-time records of participants. The platform ensures efficient coordination through features like automated registration confirmation, attendee tracking, and event categorization. Built using HTML, Tailwind CSS, and deployed with XAMPP Server, the system offers a clean and responsive user interface.",
+      description: "Event Management is a comprehensive web-based system designed to streamline the planning and execution of events. It allows organizers to create and manage events, handle attendee registrations, and maintain real-time records of participants.",
       tags: ["HTML", "XAMPP Server", "Tailwind CSS"],
       category: "web",
 
       links: {
     
         github: "https://github.com/rahulvibhakar/Event-management"
-      }
+      },
+      image:"/event_management.png"
     },
+    
     {
       id: 2,
       title: "Employee Data Analysis",
-      description: "Employee Data Analysis is a data-driven project focused on extracting meaningful insights from structured employee records. By applying data cleaning, visualization, and machine learning techniques (such as Random Forest), the system identifies key trends related to employee performance, attrition, departmental strengths, and workforce distribution. The goal is to support HR teams and management in making informed decisions regarding hiring, retention, and organizational planning. A user-friendly dashboard built using Streamlit allows interactive exploration of various metrics like age distribution, job satisfaction, and salary trends, transforming raw employee data into actionable business intelligence.",
+      description: "Employee Data Analysis is a data-driven project focused on extracting meaningful insights from structured employee records. By applying data cleaning, visualization, and machine learning techniques, the system identifies key trends related to employee performance, attrition, departmental strengths, and workforce distribution.A user-friendly dashboard built using Streamlit allows interactive exploration of various metrics.",
       tags: ["Random Forest", "Streamlit", "Tailwind CSS"],
       category: "web",
       links: {
     
         github: "https://github.com/rahulvibhakar/Employee-Data-Analysis"
-      }
+      },
+      image:"/employee_analysis.png"
     },
     {
       id: 3,
       title: "Task Allocator",
-      description: "Task Allocator is a smart task management system that automates the assignment of tasks based on team members’ skills, availability, and current workload. Designed to improve team efficiency and prevent burnout, the system uses intelligent algorithms and natural language processing models (via Hugging Face) to match tasks to the most suitable individuals. Built using React for the frontend and MongoDB for data storage, the tool supports both manual and AI-based task distribution. It includes features like skill tracking, workload visualization, and real-time updates.",
+      description: "Task Allocator is a smart task management system that automates the assignment of tasks based on team members skills, availability, and current workload. Designed to improve team efficiency and prevent burnout, the system uses intelligent algorithms and natural language processing models match tasks to the most suitable individuals.It includes features like skill tracking, workload visualization, and real-time updates.",
       tags: ["HuggingFace", "React", "MongoDB"],
       category: "design",
       links: {
     
         github:"https://github.com/rahulvibhakar/Task-Allocator"
-      }
+      },
+      image:"/task_allocator.jpg"
     },
     {
       id: 4,
       title: "Emotion Based Music Recommendation",
-      description: "Emotion-Based Music Recommendation is an AI-powered system that detects human emotions and suggests personalized music tracks accordingly. Using facial emotion recognition techniques with OpenCV and machine learning, the system analyzes real-time expressions or uploaded images to classify emotions such as happiness, sadness, anger, or surprise. Based on the detected mood, it recommends suitable songs from a curated dataset, enhancing user experience through emotionally aware interaction.",
+      description: "Emotion-Based Music Recommendation is an AI-powered system that detects human emotions and suggests personalized music tracks accordingly. Using facial emotion recognition techniques with OpenCV and machine learning, the system analyzes real-time expressions or uploaded images to classify emotions such as happiness, sadness, anger, or surprise.",
       tags: ["User data", "UI/UX"],
       category: "design",
       links: {
 
         github: "https://github.com/rahulvibhakar/Human-Emotion-Recognition"
-      }
+      },
+      image:"/emotion_detection.jpg"
     },
     {
       id: 5,
@@ -60,18 +65,20 @@ const Projects = () => {
       links: {
     
         github: "https://github.com/rahulvibhakar/Cricket_Fielding_Analysis"
-      }
+      },
+      image:"/cricket_analysis.png"
     },
     {
       id: 6,
       title: "Portfolio Website",
-      description: " This site is designed to give you insight into my technical expertise, creativity, and the projects that have helped shape my skills. Built with modern technologies such as React, Tailwind CSS, and TypeScript, it reflects my commitment to clean, efficient, and responsive design principles.Within this portfolio, you will find a collection of projects ranging from simple web apps to more complex full-stack solutions. Each project is accompanied by live demonstrations and links to source code repositories, offering transparency into my development process and problem-solving abilities.",
+      description: " This site is designed to give you insight into my technical expertise, creativity, and the projects that have helped shape my skills. Built with modern technologies such as React, Tailwind CSS, and TypeScript, it reflects my commitment to clean, efficient, and responsive design principles.",
       tags: ["React", "CSS", "Python"],
       category: "design",
       links: {
     
         github: "https://github.com/rahulvibhakar/portfolio-website"
-      }
+      },
+      image:"/portfolio.png"
     },
 
   ];

@@ -9,21 +9,13 @@ const Home = () => {
       title: "Event Management",
       description: "A complete system to manage events, attendees, and registrations efficiently.",
       github: "https://github.com/rahulvibhakar/Event-management",
-    },
-    {
-      title: "Employee Data Analysis",
-      description: "Analyzing employee records to uncover trends and generate actionable insights.",
-      github: "https://github.com/rahulvibhakar/Employee-Data-Analysis",
-    },
-    {
-      title: "Task Allocator",
-      description: "An intelligent system for dynamic task assignment based on skills and workload.",
-      github: "https://github.com/rahulvibhakar/Task-Allocator",
+      image:"/event_management.png",
     },
     {
       title: "Emotion Based Music Recommendation",
       description: "An intelligent system for analyzing human emotion and recommending music based on content.",
       github: "https://github.com/rahulvibhakar/Human-Emotion-Recognition",
+      image:"/emotion_detection.jpg"
     },
     {
       title: "Portfolio Website",
@@ -37,6 +29,13 @@ const Home = () => {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-24 md:py-32">
         <div className="max-w-3xl mx-auto text-center">
+          {/* Your Profile Image */}
+          <img
+            src="/rahul.jpg" // Replace this with the path to your image
+            alt="Rahul Vibhakar M R"
+            className="w-40 h-40 rounded-full mx-auto mb-6 border-4 border-primary shadow-lg"
+          />
+
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 animate-fade-in">
             Hello, I'm <span className="text-primary">Rahul Vibhakar M R</span>
           </h1>
