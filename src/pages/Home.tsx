@@ -50,7 +50,10 @@ const Home = () => {
               <Link to="/contact">Get In Touch</Link>
             </Button>
             <Button asChild variant="secondary" size="lg" className="animate-fade-in">
-              <a href="/Rahul Vibhakar M R_Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
+              <a 
+                href="https://drive.google.com/file/d/1LmrWvZK9pI9L1YP8Ml-6Kmc50qxZUI7C/view?usp=sharing"
+                target="_blank" 
+                rel="noopener noreferrer">View Resume</a>
             </Button>
           </div>
         </div>
