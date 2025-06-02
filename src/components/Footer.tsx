@@ -19,7 +19,7 @@ export function Footer() {
               </a>
 
               <a
-                href="https://www.linkedin.com/in/rahul-vibhakar-879a1b27a"
+                href="linkedin.com/in/rahul-vibhakar-879a1b27a"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -34,12 +34,7 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Footer Quote */}
-        <div className="mt-12 pt-12 border-t border-border text-center">
-          <p className="text-lg text-muted-foreground italic">
-            "Engineers like to solve problems. If there are no problems handily available, they will create their own." – Scott Adams
-          </p>
-        </div>
+        
       </div>
     </footer>
   );
