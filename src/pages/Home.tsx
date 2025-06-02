@@ -9,7 +9,7 @@ const Home = () => {
       title: "Event Management",
       description: "A complete system to manage events, attendees, and registrations efficiently.",
       github: "https://github.com/rahulvibhakar/Event-management",
-      image: "/event_management.png", // Ensure this is in the public/ folder
+      image: "/event_management.png",
     },
     {
       title: "Emotion Based Music Recommendation",
@@ -21,7 +21,7 @@ const Home = () => {
       title: "Portfolio Website",
       description: "This platform highlights my expertise in building responsive, user-friendly, and modern web applications using modern technologies.",
       github: "https://github.com/rahulvibhakar/portfolio-website",
-      image: "/portfolio.png", // Optional if you have an image
+      image: "/portfolio_screenshot.jpg", // Add if available
     },
   ];
 
@@ -33,8 +33,9 @@ const Home = () => {
           <img
             src="/rahul.jpg"
             alt="Rahul Vibhakar M R"
-            className="w-40 h-40 rounded-full mx-auto mb-6 border-4 border-primary shadow-lg"
+            className="w-40 h-40 rounded-full mx-auto mb-6 border-4 border-primary shadow-lg object-cover"
           />
+
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 animate-fade-in">
             Hello, I'm <span className="text-primary">Rahul Vibhakar M R</span>
           </h1>
@@ -47,6 +48,9 @@ const Home = () => {
             </Button>
             <Button asChild variant="outline" size="lg" className="animate-fade-in">
               <Link to="/contact">Get In Touch</Link>
+            </Button>
+            <Button asChild variant="secondary" size="lg" className="animate-fade-in">
+              <a href="/Rahul Vibhakar M R_Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
             </Button>
           </div>
         </div>
@@ -64,15 +68,16 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, index) => (
-              <div key={index} className="bg-card border border-border rounded-lg overflow-hidden transition-all hover:shadow-lg">
+              <div
+                key={index}
+                className="bg-card border border-border rounded-lg overflow-hidden transition-all hover:shadow-lg"
+              >
                 <div className="aspect-square bg-muted overflow-hidden">
-                  {project.image && (
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-full object-cover"
-                    />
-                  )}
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">{project.title}</h3>
