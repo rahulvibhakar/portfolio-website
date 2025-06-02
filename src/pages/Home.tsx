@@ -21,7 +21,7 @@ const Home = () => {
       title: "Portfolio Website",
       description: "This platform highlights my expertise in building responsive, user-friendly, and modern web applications using modern technologies.",
       github: "https://github.com/rahulvibhakar/portfolio-website",
-      image: "/portfolio_screenshot.jpg", // Add if available
+      image: "/portfolio.png", // Add if available
     },
   ];
 
