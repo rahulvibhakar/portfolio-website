@@ -9,18 +9,19 @@ const Home = () => {
       title: "Event Management",
       description: "A complete system to manage events, attendees, and registrations efficiently.",
       github: "https://github.com/rahulvibhakar/Event-management",
-      image:"/event_management.png",
+      image: "/event_management.png", // Ensure this is in the public/ folder
     },
     {
       title: "Emotion Based Music Recommendation",
       description: "An intelligent system for analyzing human emotion and recommending music based on content.",
       github: "https://github.com/rahulvibhakar/Human-Emotion-Recognition",
-      image:"/emotion_detection.jpg"
+      image: "/emotion_detection.jpg",
     },
     {
       title: "Portfolio Website",
       description: "This platform highlights my expertise in building responsive, user-friendly, and modern web applications using modern technologies.",
       github: "https://github.com/rahulvibhakar/portfolio-website",
+      image: "/portfolio.png", // Optional if you have an image
     },
   ];
 
@@ -29,13 +30,11 @@ const Home = () => {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-24 md:py-32">
         <div className="max-w-3xl mx-auto text-center">
-          {/* Your Profile Image */}
           <img
-            src="/rahul.jpg" // Replace this with the path to your image
+            src="/rahul.jpg"
             alt="Rahul Vibhakar M R"
             className="w-40 h-40 rounded-full mx-auto mb-6 border-4 border-primary shadow-lg"
           />
-
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 animate-fade-in">
             Hello, I'm <span className="text-primary">Rahul Vibhakar M R</span>
           </h1>
@@ -66,7 +65,15 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, index) => (
               <div key={index} className="bg-card border border-border rounded-lg overflow-hidden transition-all hover:shadow-lg">
-                <div className="aspect-video bg-muted"></div>
+                <div className="aspect-square bg-muted overflow-hidden">
+                  {project.image && (
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                    />
+                  )}
+                </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                   <p className="text-muted-foreground mb-4">{project.description}</p>
