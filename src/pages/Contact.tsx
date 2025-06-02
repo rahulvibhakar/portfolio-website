@@ -21,7 +21,7 @@ const Contact = () => {
               <Mail className="h-6 w-6 text-primary" />
             </div>
             <h3 className="text-lg font-bold mb-2">Email</h3>
-            <p className="text-muted-foreground mb-4">For general inquiries and collaborations</p>
+            <p className="text-muted-foreground mb-4">For any queries</p>
             <a href="mailto:rahul.vibhakar04@gmail.com" className="text-primary font-medium break-all">
               rahul.vibhakar04@gmail.com
             </a>
@@ -33,7 +33,7 @@ const Contact = () => {
               <Phone className="h-6 w-6 text-primary" />
             </div>
             <h3 className="text-lg font-bold mb-2">Phone</h3>
-            <p className="text-muted-foreground mb-4">Available during business hours</p>
+            <p className="text-muted-foreground mb-4"></p>
             <a href="tel:+919483056352" className="text-primary font-medium">
               +91 94830 56352
             </a>

@@ -68,19 +68,7 @@ const Projects = () => {
       },
       image:"/cricket_analysis.png"
     },
-    {
-      id: 6,
-      title: "Portfolio Website",
-      description: " This site is designed to give you insight into my technical expertise, creativity, and the projects that have helped shape my skills. Built with modern technologies such as React, Tailwind CSS, and TypeScript, it reflects my commitment to clean, efficient, and responsive design principles.",
-      tags: ["React", "CSS", "Python"],
-      category: "design",
-      links: {
     
-        github: "https://github.com/rahulvibhakar/portfolio-website"
-      },
-      image:"/portfolio.png"
-    },
-
   ];
 
   return (

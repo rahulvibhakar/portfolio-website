@@ -83,7 +83,7 @@ const Home = () => {
             </Button>
             <Button asChild variant="secondary" size="lg">
               <a
-                href="https://drive.google.com/file/d/1LmrWvZK9pI9L1YP8Ml-6Kmc50qxZUI7C/view?usp=sharing"
+                href="https://drive.google.com/file/d/13huUWiV5Kn-IVpNgH98EJvJrELpixt4X/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
