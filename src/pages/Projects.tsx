@@ -180,7 +180,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center"
               >
-                <Github className="mr-1 h-4 w-4" /> Source Code
+                <Github className="mr-1 h-4 w-4" /> Github Link
               </a>
             </Button>
           )}
