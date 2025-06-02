@@ -40,7 +40,7 @@ const Home = () => {
     {
       title: "Emotion Based Music Recommendation",
       description: "An intelligent system for analyzing human emotion and recommending music based on content.",
-      github: "https://github.com/rahulvibhakar/Human-Emotion-Recognition",
+      github: "https://github.com/rahulvibhakar/Human-Emotion-recognition-to-Recommend-Songs-main",
       image: "/emotion_detection.jpg",
     },
     {

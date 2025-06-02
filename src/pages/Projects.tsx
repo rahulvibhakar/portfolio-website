@@ -52,7 +52,7 @@ const Projects = () => {
       category: "design",
       links: {
 
-        github: "https://github.com/rahulvibhakar/Human-Emotion-Recognition"
+        github: "https://github.com/rahulvibhakar/Human-Emotion-recognition-to-Recommend-Songs-main"
       },
       image:"/emotion_detection.jpg"
     },
